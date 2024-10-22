@@ -47,5 +47,5 @@ async def predict(data:dict):
     }
 
 if __name__ == "__main__":
-    import unicorn
-    unicorn.run(app, host="0.0.0.0", port=10000)
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=10000)
