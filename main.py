@@ -35,7 +35,7 @@ def get_predictions(customer_dict):
     probability = loaded_model.predict_proba(preprocessed_data)
     return prediction, probability
 
-@app.post("/predict")
+@app.post("/")
 async def predict(data:dict):
 
     # Make prediction
