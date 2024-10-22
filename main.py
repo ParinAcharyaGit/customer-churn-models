@@ -4,7 +4,7 @@ import pandas as pd
 
 app=FastAPI()
 
-with open('latest_xgb_model.pkl') as model_file:
+with open('latest_xgb_model.pkl', 'rb') as model_file:
     loaded_model = pickle.load(model_file)
 
 def preprocess_data(customer_dict):
